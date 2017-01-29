@@ -88,13 +88,13 @@ open class AnimationSequence: NSObject, UIDynamicAnimatorDelegate {
     }
     
     //MARK: UIDynamicAnimatorDelegate methods
-    func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator) {
+    public func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator) {
         animator.removeAllBehaviors()
         popFirstStepIfExsist()
         excuteFirstStepIfExist()
     }
     
-    func dynamicAnimatorWillResume(_ animator: UIDynamicAnimator) {
+    public func dynamicAnimatorWillResume(_ animator: UIDynamicAnimator) {
         
     }
 }
