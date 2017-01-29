@@ -47,7 +47,7 @@ open class AnimationType {
     var mainType: AnimationStyle
     var subType: AnimationSubType
     
-    init (type: AnimationStyle, subType: AnimationSubType) {
+    public init (type: AnimationStyle, subType: AnimationSubType) {
         self.mainType = type
         self.subType = subType
     }
