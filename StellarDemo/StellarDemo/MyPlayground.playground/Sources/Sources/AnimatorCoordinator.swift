@@ -52,12 +52,12 @@ open class AnimatorCoordinator: NSObject, UIDynamicAnimatorDelegate {
     
     //MARK: UIDynamicAnimatorDelegate methods
     
-    func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator) {
+    public func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator) {
         let index = activedAnimators.index(of: animator)
         activedAnimators.remove(at: index!)
     }
     
-    func dynamicAnimatorWillResume(_ animator: UIDynamicAnimator) {
+    public func dynamicAnimatorWillResume(_ animator: UIDynamicAnimator) {
         //
     }
 }
