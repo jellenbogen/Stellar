@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal class AnimatorCoordinator: NSObject, UIDynamicAnimatorDelegate {
+open class AnimatorCoordinator: NSObject, UIDynamicAnimatorDelegate {
     static let shared = AnimatorCoordinator()
     fileprivate var activedAnimators: [UIDynamicAnimator] = Array()
     fileprivate var basicAnimator = UIDynamicAnimator()

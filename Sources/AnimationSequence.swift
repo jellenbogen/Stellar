@@ -12,7 +12,7 @@ protocol AnimationSequenceDelegate: class {
     func animationSequenceDidComplete(_ sequence: AnimationSequence);
 }
 
-internal class AnimationSequence: NSObject, UIDynamicAnimatorDelegate {
+open class AnimationSequence: NSObject, UIDynamicAnimatorDelegate {
     var steps: [AnimationStep] = Array()
     weak var view: DriveAnimateBehaviors!
     weak var delegate: AnimationSequenceDelegate?

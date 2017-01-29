@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal extension UIDynamicBehavior {
+public extension UIDynamicBehavior {
     
     func commit() {
         AnimatorCoordinator.shared.addBehavior(self)

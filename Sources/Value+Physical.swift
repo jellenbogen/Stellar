@@ -204,7 +204,7 @@ extension UIColor: Physical {
     
     //performance
     typealias ColorInfo = (hue:CGFloat,saturation:CGFloat,brightness:CGFloat,alpha:CGFloat)
-    internal func colorInfo() -> ColorInfo {
+    public func colorInfo() -> ColorInfo {
         var hue: CGFloat = 0.0
         var saturation: CGFloat = 0.0
         var brightness: CGFloat = 0.0
