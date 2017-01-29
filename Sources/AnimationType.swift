@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum AnimationSubType {
+public enum AnimationSubType {
     case moveX(CGFloat)
     case moveY(CGFloat)
     case moveXY(CGFloat,CGFloat)//Layer
